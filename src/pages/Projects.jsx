@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Portfolio from '../components/Portfolio';
 import { motion } from 'framer-motion';
 
