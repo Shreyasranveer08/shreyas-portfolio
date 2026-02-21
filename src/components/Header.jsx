@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
@@ -18,8 +18,10 @@ const Header = () => {
     }, []);
 
     useEffect(() => {
-        setIsOpen(false);
-    }, [location]);
+        if (isOpen) {
+            setIsOpen(false);
+        }
+    }, [location, isOpen]);
 
     return (
         <header className={`header ${scrolled ? 'scrolled' : ''}`}>

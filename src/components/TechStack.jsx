@@ -1,3 +1,4 @@
+import React from 'react';
 import './TechStack.css';
 
 const technologies = [

@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Layout, BrainCircuit } from 'lucide-react';
 import './Services.css';
