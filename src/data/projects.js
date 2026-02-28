@@ -12,6 +12,17 @@ export const projects = [
     },
     {
         id: 2,
+        title: "AtmosLofi",
+        description: "AI-powered Lofi studio that transforms any track into a cozy atmospheric masterpiece.",
+        image: "/atmoslofi.png",
+        tags: ["Next.js", "FastAPI", "Audio Processing"],
+        links: {
+            github: "https://github.com/Shreyasranveer08",
+            live: "https://atmoslofi-af7a4.web.app/"
+        }
+    },
+    {
+        id: 3,
         title: "AI Wealth OS",
         description: "Intelligent Quant-Trading & Market Intelligence Engine with real-time AI insights, sentiment analysis, and secure auth.",
         image: "/ai_wealth_os_thumb.png",
