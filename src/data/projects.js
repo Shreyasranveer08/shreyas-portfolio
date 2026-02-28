@@ -6,7 +6,7 @@ export const projects = [
         image: "/medAI.png",
         tags: ["React", "Firebase", "AI Integration"],
         links: {
-            github: "https://github.com/Shreyasranveer08", // Assuming repo is here or general profile
+            github: "https://github.com/Shreyasranveer08",
             live: "https://medai-c740a.web.app/login"
         }
     },
@@ -20,5 +20,5 @@ export const projects = [
             github: "https://github.com/Shreyasranveer08/AI-Wealth-OS",
             live: "https://ai-wealth-os.web.app"
         }
-    },
+    }
 ];
