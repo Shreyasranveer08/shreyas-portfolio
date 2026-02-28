@@ -25,7 +25,7 @@ export const projects = [
         id: 3,
         title: "AI Wealth OS",
         description: "Intelligent Quant-Trading & Market Intelligence Engine with real-time AI insights, sentiment analysis, and secure auth.",
-        image: "/ai_wealth_os_thumb.png",
+        image: "/aiWealthOS.png",
         tags: ["Next.js", "FastAPI", "Firebase", "AI/LLM"],
         links: {
             github: "https://github.com/Shreyasranveer08/AI-Wealth-OS",
