@@ -1,5 +1,16 @@
 export const projects = [
     {
+        id: 4,
+        title: "QuantumMD OS",
+        description: "An advanced, comprehensive Medical UI with 70+ AI tools, dosage calculators, and global disease monitoring built on a premium cross-platform design system.",
+        image: "/quantummd.png",
+        tags: ["React", "TypeScript", "FastAPI"],
+        links: {
+            github: "https://github.com/Shreyasranveer08",
+            live: "https://frontend-six-beta-94.vercel.app"
+        }
+    },
+    {
         id: 1,
         title: "Medai",
         description: "An advanced medical AI platform streamlining healthcare access and diagnostics.",

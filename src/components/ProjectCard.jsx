@@ -12,7 +12,14 @@ const ProjectCard = ({ project }) => {
             whileHover={{ y: -10 }}
             transition={{ duration: 0.3 }}
         >
-            <div className="card-image-container">
+            <div
+                className="card-image-container"
+                onClick={(e) => {
+                    if (e.target.closest('.card-links')) return;
+                    if (links?.live) window.open(links.live, '_blank');
+                }}
+                style={{ cursor: links?.live ? 'pointer' : 'default' }}
+            >
                 {image ? (
                     <img src={image} alt={title} className="card-image" loading="lazy" />
                 ) : (
