@@ -7,7 +7,7 @@ export const projects = [
         tags: ["React", "TypeScript", "FastAPI"],
         links: {
             github: "https://github.com/Shreyasranveer08",
-            live: "https://frontend-six-beta-94.vercel.app"
+            live: "https://www.quantummd.space"
         }
     },
     {
