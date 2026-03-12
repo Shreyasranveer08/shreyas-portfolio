@@ -1,5 +1,16 @@
 export const projects = [
     {
+        id: 5,
+        title: "CareerShadow AI",
+        description: "All-in-one AI career suite — 6-source global job aggregator, ATS score checker, CV maker with 4 templates, cover letter generator, salary negotiation scripts, LinkedIn optimizer, portfolio builder, and 50+ job portal quick search.",
+        image: "/careershadow.png",
+        tags: ["Vite", "AI/LLM", "Firebase", "RapidAPI"],
+        links: {
+            github: "https://github.com/Shreyasranveer08",
+            live: "https://careershadow-ai.web.app"
+        }
+    },
+    {
         id: 4,
         title: "QuantumMD OS",
         description: "An advanced, comprehensive Medical UI with 70+ AI tools, dosage calculators, and global disease monitoring built on a premium cross-platform design system.",
