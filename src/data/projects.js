@@ -1,5 +1,16 @@
 export const projects = [
     {
+        id: 6,
+        title: "TrueMatch AI",
+        description: "Advanced AI-powered matchmaking and discovery engine designed for precision and intelligent connections.",
+        image: "/truematch.png",
+        tags: ["React", "AI/LLM", "Firebase"],
+        links: {
+            github: "https://github.com/Shreyasranveer08",
+            live: "https://truematch-ai.web.app/"
+        }
+    },
+    {
         id: 5,
         title: "CareerShadow AI",
         description: "All-in-one AI career suite — 6-source global job aggregator, ATS score checker, CV maker with 4 templates, cover letter generator, salary negotiation scripts, LinkedIn optimizer, portfolio builder, and 50+ job portal quick search.",
