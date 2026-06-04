@@ -1,5 +1,16 @@
 export const projects = [
     {
+        id: 7,
+        title: "Nexus Intelligence",
+        description: "Deep RAG Market Intelligence Engine featuring automated competitor scraping, AI strategic copilot with multi-step reasoning, and 1-click PPT export.",
+        image: "/nexusintel.png",
+        tags: ["Next.js", "Supabase", "AI/LLM"],
+        links: {
+            github: "https://github.com/Shreyasranveer08/nexus-intelligence",
+            live: "https://nexus-intelligence-g2vvr7yk9.vercel.app"
+        }
+    },
+    {
         id: 6,
         title: "TrueMatch AI",
         description: "Advanced AI-powered matchmaking and discovery engine designed for precision and intelligent connections.",
