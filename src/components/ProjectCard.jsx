@@ -20,15 +20,7 @@ const ProjectCard = ({ project }) => {
                 }}
                 style={{ cursor: links?.live ? 'pointer' : 'default', position: 'relative', overflow: 'hidden' }}
             >
-                {project.isLivePreview && links?.live ? (
-                    <iframe 
-                        src={links.live} 
-                        title={title}
-                        className="card-image"
-                        style={{ width: '100%', height: '100%', border: 'none', pointerEvents: 'none', backgroundColor: '#0a0a0a' }}
-                        sandbox="allow-scripts allow-same-origin"
-                    />
-                ) : image ? (
+                {image ? (
                     <img src={image} alt={title} className="card-image" loading="lazy" />
                 ) : (
                     <div className="card-placeholder" />

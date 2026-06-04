@@ -4,7 +4,6 @@ export const projects = [
         title: "Nexus Intelligence",
         description: "Deep RAG Market Intelligence Engine featuring automated competitor scraping, AI strategic copilot with multi-step reasoning, and 1-click PPT export.",
         image: "/nexusintel.png",
-        isLivePreview: true,
         tags: ["Next.js", "Supabase", "AI/LLM"],
         links: {
             github: "https://github.com/Shreyasranveer08/nexus-intelligence",
