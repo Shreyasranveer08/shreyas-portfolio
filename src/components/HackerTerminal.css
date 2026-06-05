@@ -1,0 +1,68 @@
+.hacker-terminal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    background: rgba(5, 5, 8, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--color-accent-cyan);
+    z-index: 9999999;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 10px 40px rgba(0, 240, 255, 0.2);
+}
+
+.terminal-header {
+    background: rgba(0, 240, 255, 0.1);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-accent-cyan);
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.terminal-header button {
+    background: none;
+    border: none;
+    color: var(--color-accent-red);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.terminal-body {
+    padding: 1rem;
+    flex: 1;
+    overflow-y: auto;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.terminal-line {
+    margin-bottom: 0.4rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.terminal-input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.terminal-prompt {
+    color: var(--color-accent-cyan);
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.terminal-input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    flex: 1;
+    outline: none;
+}

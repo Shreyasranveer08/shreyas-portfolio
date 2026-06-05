@@ -1,6 +1,7 @@
 .services-section {
     padding: 6rem 0;
-    background: var(--color-bg-secondary);
+    position: relative;
+    z-index: 2;
 }
 
 .services-header {
@@ -10,45 +11,56 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     padding: 2.5rem;
-    border-radius: 16px;
-    transition: all 0.3s ease;
+    border-radius: 20px;
+    transition: all var(--transition-medium);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
     overflow: hidden;
+    box-shadow: var(--glass-shadow);
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.05);
-    border-color: var(--color-accent);
-    /* Cyan glow */
-    box-shadow: 0 10px 30px rgba(0, 240, 255, 0.15), 0 0 15px rgba(0, 240, 255, 0.1);
+    transform: translateY(-8px);
+    background: var(--glass-bg-hover);
+    border-color: var(--color-accent-cyan);
+    box-shadow: 0 15px 40px rgba(0, 240, 255, 0.15), inset 0 0 15px rgba(0, 240, 255, 0.05);
 }
 
 .service-icon {
     margin-bottom: 1.5rem;
-    color: var(--color-primary);
-    transition: color 0.3s ease;
+    color: var(--color-text-secondary);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    transition: all var(--transition-fast);
 }
 
 .service-card:hover .service-icon {
-    color: var(--color-accent);
+    color: var(--color-accent-cyan);
+    background: rgba(0, 240, 255, 0.1);
+    border-color: var(--color-accent-cyan);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 240, 255, 0.2);
 }
 
 .service-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--color-text-primary);
+    font-weight: 700;
 }
 
 .service-desc {
@@ -60,4 +72,4 @@
     .services-grid {
         grid-template-columns: 1fr;
     }
-}
+}

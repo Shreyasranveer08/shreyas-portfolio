@@ -1,0 +1,31 @@
+@media (min-width: 769px) {
+    body, * {
+        cursor: none !important;
+    }
+}
+
+.cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-accent-cyan);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    box-shadow: 0 0 10px var(--color-accent-cyan);
+}
+
+.cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 42, 122, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99998;
+    backdrop-filter: blur(2px);
+}

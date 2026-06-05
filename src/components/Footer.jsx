@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="container footer-content">
                 <div className="footer-brand">
-                    <h3>Unmbracore</h3>
+                    <h3 className="text-gradient">Unmbracore</h3>
                     <p>Designing the shadows. Building the light.</p>
                 </div>
 

@@ -1,7 +1,7 @@
 .portfolio-section {
-    padding: 8rem 0;
+    padding: 6rem 0;
     position: relative;
-    background: var(--color-bg-primary);
+    z-index: 2;
 }
 
 .section-header {
@@ -10,31 +10,29 @@
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
-    background: linear-gradient(to right, #fff, var(--color-text-secondary));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .section-subtitle {
     color: var(--color-text-secondary);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 2rem;
-    padding: 0 1rem;
 }
 
 @media (max-width: 768px) {
     .section-title {
         font-size: 2.5rem;
     }
-}
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

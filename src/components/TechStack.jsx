@@ -1,39 +1,52 @@
 import React from 'react';
+import { Cloud } from 'react-icon-cloud';
 import './TechStack.css';
 
 const technologies = [
-    { name: 'React', color: '#61DAFB' },
-    { name: 'Node.js', color: '#339933' },
-    { name: 'JavaScript', color: '#F7DF1E' },
-    { name: 'TypeScript', color: '#3178C6' },
-    { name: 'Firebase', color: '#FFCA28' },
-    { name: 'MongoDB', color: '#47A248' },
-    { name: 'Python', color: '#3776AB' },
-    { name: 'Framer Motion', color: '#0055FF' },
-    { name: 'Git', color: '#F05032' },
-    { name: 'Vite', color: '#646CFF' },
-    { name: 'Tailwind', color: '#38B2AC' },
-    { name: 'Next.js', color: '#000000' }
+    'React', 'Node.js', 'JavaScript', 'TypeScript', 'Firebase', 
+    'MongoDB', 'Python', 'Framer Motion', 'Git', 'Vite', 'Tailwind CSS', 
+    'Next.js', 'Docker', 'AWS', 'GraphQL', 'Supabase', 'C++', 'Java',
+    'OpenAI', 'LangChain', 'TensorFlow', 'PostgreSQL'
+];
+
+const colors = [
+    'var(--color-accent-cyan)', 
+    'var(--color-accent-red)', 
+    '#ffffff'
 ];
 
 const TechStack = () => {
     return (
         <div className="tech-stack-container">
-            <h3 className="tech-stack-title">Technologies I Work With</h3>
-            <div className="marquee">
-                <div className="marquee-content">
-                    {technologies.map((tech, index) => (
-                        <div key={index} className="tech-item" style={{ borderColor: tech.color }}>
-                            <span className="tech-name" style={{ color: tech.color }}>{tech.name}</span>
-                        </div>
+            <h3 className="tech-stack-title">Core Competencies</h3>
+            <div className="cloud-wrapper">
+                <div className="cloud-glow-bg"></div>
+                <Cloud
+                    options={{
+                        clickToFront: 500,
+                        depth: 1,
+                        imageScale: 2.5,
+                        initial: [0.1, -0.1],
+                        outlineColour: '#0000',
+                        reverse: true,
+                        tooltip: 'native',
+                        tooltipDelay: 0,
+                        wheelZoom: false,
+                        shape: 'sphere'
+                    }}
+                >
+                    {technologies.map((tech, i) => (
+                        <a key={i} href="#" onClick={(e) => e.preventDefault()} style={{
+                            color: colors[i % colors.length],
+                            fontSize: '2rem',
+                            fontWeight: '900',
+                            fontFamily: 'var(--font-family-mono)',
+                            textShadow: `0 0 15px ${colors[i % colors.length]}`
+                        }}>
+                            {tech}
+                        </a>
                     ))}
-                    {/* Duplicate for seamless loop */}
-                    {technologies.map((tech, index) => (
-                        <div key={`dup-${index}`} className="tech-item" style={{ borderColor: tech.color }}>
-                            <span className="tech-name" style={{ color: tech.color }}>{tech.name}</span>
-                        </div>
-                    ))}
-                </div>
+                </Cloud>
             </div>
         </div>
     );

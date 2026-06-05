@@ -1,8 +1,9 @@
 .github-section {
-    padding: 4rem 0;
-    background: var(--color-bg-primary);
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .github-content {
@@ -12,21 +13,19 @@
     width: 100%;
 }
 
+.section-subtitle {
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+}
+
 .calendar-wrapper {
-    margin-top: 2rem;
-    padding: 2rem;
-    background: var(--color-bg-secondary);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     width: 100%;
-    max-width: 900px;
     display: flex;
     justify-content: center;
     overflow-x: auto;
 }
 
-/* Customizing the calendar via CSS if needed, though props used mostly */
+/* Customizing the calendar */
 .react-activity-calendar__count {
     color: var(--color-text-secondary);
-}
+}

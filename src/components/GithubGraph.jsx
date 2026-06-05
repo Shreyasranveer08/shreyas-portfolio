@@ -6,14 +6,13 @@ import './GithubGraph.css';
 const GithubGraph = () => {
     return (
         <section className="github-section">
-            <div className="container">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     className="github-content"
                 >
-                    <h2 className="section-title">Code <span className="hero-accent">Consistency</span></h2>
+                    <h2 className="section-title text-gradient">Code <span className="hero-accent">Consistency</span></h2>
                     <p className="section-subtitle">
                         My contributions to the open-source world and private projects.
                     </p>
@@ -31,7 +30,6 @@ const GithubGraph = () => {
                         />
                     </div>
                 </motion.div>
-            </div>
         </section>
     );
 };

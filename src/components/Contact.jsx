@@ -57,7 +57,7 @@ const Contact = () => {
                     viewport={{ once: true }}
                     className="contact-content"
                 >
-                    <h2 className="section-title">Get In Touch</h2>
+                    <h2 className="section-title text-gradient">Get In Touch</h2>
                     <p className="section-subtitle">
                         Have a project in mind? Let's build something extraordinary together.
                     </p>

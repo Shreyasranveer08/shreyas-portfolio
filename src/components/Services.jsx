@@ -31,7 +31,7 @@ const Services = () => {
                     viewport={{ once: true }}
                     className="services-header"
                 >
-                    <h2 className="section-title">What I <span className="hero-accent">Do</span></h2>
+                    <h2 className="section-title text-gradient">What I <span className="hero-accent">Do</span></h2>
                     <p className="section-subtitle">Combining creativity with technical expertise to deliver results.</p>
                 </motion.div>
 

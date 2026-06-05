@@ -1,0 +1,32 @@
+/* Matrix Theme Global Overrides */
+
+body.matrix-theme {
+    --color-accent-cyan: #00ff41 !important;
+    --color-accent-red: #008f11 !important;
+    --color-accent-pink: #00ff41 !important;
+    --gradient-text: linear-gradient(135deg, #00ff41 0%, #008f11 100%) !important;
+    --gradient-neon: linear-gradient(135deg, #00ff41 0%, #008f11 100%) !important;
+    --gradient-glow: linear-gradient(90deg, rgba(0, 255, 65, 0.4), rgba(0, 143, 17, 0.4)) !important;
+    --glass-border-highlight: rgba(0, 255, 65, 0.4) !important;
+    --color-text-primary: #00ff41 !important;
+    --color-text-secondary: #008f11 !important;
+}
+
+body.matrix-theme * {
+    /* Force monospace for that hacker feel */
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+body.matrix-theme img {
+    /* Make all images look like green night vision */
+    filter: sepia(100%) hue-rotate(80deg) saturate(400%) contrast(1.2) brightness(0.8) !important;
+}
+
+body.matrix-theme .ai-background::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 255, 65, 0.1) 50%) !important;
+    opacity: 1 !important;
+}
+
+body.matrix-theme .mesh-gradient {
+    background: radial-gradient(circle, rgba(0,255,65,0.2) 0%, rgba(0,0,0,0) 70%) !important;
+}

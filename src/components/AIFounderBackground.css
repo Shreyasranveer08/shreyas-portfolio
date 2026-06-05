@@ -1,0 +1,92 @@
+.ai-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: var(--color-bg-base);
+  overflow: hidden;
+}
+
+.ai-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(255, 255, 255, 0.015) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.6; /* Softer, elegant texture */
+}
+
+.mesh-gradient {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(160px); /* Increased blur for smoother blending */
+  opacity: 0.35;
+  animation: float 25s infinite ease-in-out;
+}
+
+.mesh-1 {
+  width: 70vw;
+  height: 70vw;
+  background: radial-gradient(circle, rgba(0,240,255,0.12) 0%, rgba(0,0,0,0) 70%);
+  top: -15vw;
+  left: -15vw;
+  animation-delay: 0s;
+}
+
+.mesh-2 {
+  width: 65vw;
+  height: 65vw;
+  background: radial-gradient(circle, rgba(255,42,122,0.12) 0%, rgba(0,0,0,0) 70%);
+  bottom: -15vw;
+  right: -15vw;
+  animation-duration: 30s;
+  animation-delay: -5s;
+}
+
+.mesh-3 {
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, rgba(255,0,255,0.08) 0%, rgba(0,0,0,0) 70%);
+  top: 40%;
+  left: 40%;
+  animation-duration: 30s;
+  animation-delay: -10s;
+}
+
+.ai-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  mix-blend-mode: screen;
+}
+
+.vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 40%, rgba(3, 3, 5, 0.8) 100%);
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(5%, 5%) scale(1.05); }
+  66% { transform: translate(-2%, 8%) scale(0.95); }
+  100% { transform: translate(0, 0) scale(1); }
+}

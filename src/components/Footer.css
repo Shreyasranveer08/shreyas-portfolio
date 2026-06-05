@@ -1,27 +1,30 @@
 .footer {
-    background: var(--color-bg-secondary);
+    background: transparent;
     border-top: 1px solid var(--glass-border);
-    padding: 3rem 0 1.5rem;
+    padding: 4rem 0 2rem;
     margin-top: auto;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(10px);
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .footer-brand h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-bottom: 0.5rem;
-    background: linear-gradient(to right, #fff, var(--color-text-secondary));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-family: var(--font-family-mono);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-brand p {
+    color: var(--color-text-secondary);
 }
 
 .footer-socials {
@@ -31,27 +34,36 @@
 
 .footer-socials a {
     color: var(--color-text-secondary);
-    transition: all 0.3s ease;
+    transition: all var(--transition-fast);
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-socials a:hover {
-    color: var(--color-primary);
-    transform: translateY(-3px);
-    filter: drop-shadow(0 0 8px var(--color-primary));
+    color: var(--color-accent-cyan);
+    background: rgba(0, 240, 255, 0.1);
+    border-color: var(--color-accent-cyan);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 240, 255, 0.3);
 }
 
 .footer-bottom {
     text-align: center;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    color: var(--color-text-secondary);
-    font-size: 0.9rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--glass-border);
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
         text-align: center;
-        gap: 2rem;
+        gap: 2.5rem;
     }
-}
+}
