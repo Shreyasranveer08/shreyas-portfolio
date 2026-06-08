@@ -1,5 +1,16 @@
 export const projects = [
     {
+        id: 8,
+        title: "IdeaLab AI",
+        description: "An AI-powered startup discovery and validation engine with real-time data ingestion, opportunity scoring, and premium 'iOS 26' glassmorphism design.",
+        image: "/idealab.png",
+        tags: ["React", "Node.js", "Prisma", "AI/LLM"],
+        links: {
+            github: "https://github.com/Shreyasranveer08/idealab-ai",
+            live: "https://idealab-ai.vercel.app/"
+        }
+    },
+    {
         id: 7,
         title: "Nexus Intelligence",
         description: "Deep RAG Market Intelligence Engine featuring automated competitor scraping, AI strategic copilot with multi-step reasoning, and 1-click PPT export.",
