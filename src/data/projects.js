@@ -1,5 +1,16 @@
 export const projects = [
     {
+        id: 9,
+        title: "FinPilot AI",
+        description: "Next-generation AI Wealth OS & Financial Simulator featuring a personalized Digital Twin, real-time AI CFO, Fraud Detection, and Cash Flow Forecasting. Powered by a multi-tenant Supabase backend with Row-Level Security.",
+        image: "/finpilot.png",
+        tags: ["React", "Vite", "Supabase", "Firebase", "AI/LLM"],
+        links: {
+            github: "https://github.com/Shreyasranveer08/AI-Wealth-OS",
+            live: "https://ai-wealth-os.web.app"
+        }
+    },
+    {
         id: 8,
         title: "IdeaLab AI",
         description: "An AI-powered startup discovery and validation engine with real-time data ingestion, opportunity scoring, and premium 'iOS 26' glassmorphism design.",
