@@ -6,7 +6,6 @@ export const projects = [
         image: "/finpilot.png",
         tags: ["React", "Vite", "Supabase", "Firebase", "AI/LLM"],
         links: {
-            github: "https://github.com/Shreyasranveer08/AI-Wealth-OS",
             live: "https://ai-wealth-os.web.app"
         }
     },
